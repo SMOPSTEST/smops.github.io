@@ -165,7 +165,7 @@ input, select, textarea {
 		color: #ffffff;
 		font-family: "Source Sans Pro", sans-serif;
 		font-weight: 300;
-		font-size: 1rem;
+		font-size: 1.15rem;
 		line-height: 1.65;
 	}
 
@@ -733,11 +733,17 @@ input, select, textarea {
 			display: block;
 			margin: 0.5rem 0;
 			width: 100%;
+			max-width: 40rem;
+			margin-left: auto;
+			margin-right: auto;
+			margin-right: auto;
+			margin-left: auto;
+			margin-top: 1rem;
+			margin-bottom: 1rem;
 		}
 
 			.image.main img {
 				width: 100%;
-				max-width: 40rem;
 			}
 
 		@media screen and (max-width: 736px) {
@@ -1626,7 +1632,7 @@ input, select, textarea {
 			transition: opacity 0.325s ease-in-out, transform 0.325s ease-in-out;
 			padding: 4.5rem 2.5rem 1.5rem 2.5rem ;
 			position: relative;
-			width: 60%;
+			width: 65%;
 			max-width: 100%;
 			background-color: rgba(27, 31, 34, 0.85);
 			border-radius: 4px;
@@ -1685,6 +1691,7 @@ input, select, textarea {
 
 			#main article {
 				padding: 3.5rem 2rem 0.5rem 2rem ;
+				width: 80%;
 			}
 
 				#main article .close:before {
@@ -1701,6 +1708,7 @@ input, select, textarea {
 
 			#main article {
 				padding: 3rem 1.5rem 0.5rem 1.5rem ;
+				width: 90%;
 			}
 
 		}
@@ -1850,7 +1858,7 @@ button.accordion {
 }
 
 .imagewrapper img {
-	width: 80%;
+	width: 60%;
 	vertical-align: middle;
 	/* object-fit: contain; */
 	border-radius: 50%;
@@ -1936,15 +1944,16 @@ button.accordion {
 		vertical-align: middle;
 		border-radius: 0em;
 		width: 100%;
-		margin-right: auto;
-		margin-left: auto;
 	}
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 700px;
+  max-width: 40rem;
   position: relative;
-  margin: auto;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 
