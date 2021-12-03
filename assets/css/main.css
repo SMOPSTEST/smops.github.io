@@ -88,7 +88,7 @@ input, select, textarea {
 
 	html {
 		box-sizing: border-box;
-		overflow-y: scroll; /*added to avoid shifting to the right*/
+		overflow-y: overlay; /*hides bar and also prevents shifting to the right*/
 	}
 
 	*, *:before, *:after {
@@ -97,6 +97,27 @@ input, select, textarea {
 
 	body {
 		background: #1b1f22;
+	}
+
+		/* Works on Firefox */
+	* {
+		scrollbar-width: thin;
+		scrollbar-color: rgba(255, 255, 255, 0.075) rgb(110, 110, 110);
+	}
+	
+	/* Works on Chrome, Edge, and Safari */
+	*::-webkit-scrollbar {
+		width: 12px;
+	}
+	
+	*::-webkit-scrollbar-track {
+		background: rgba(255, 255, 255, 0.075);
+	}
+	
+	*::-webkit-scrollbar-thumb {
+		background-color: rgb(110, 110, 110);
+		border-radius: 20px;
+		border: 3px solid rgba(255, 255, 255, 0.075);
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -180,7 +201,7 @@ input, select, textarea {
 		color: #ffffff;
 		font-weight: 600;
 		line-height: 1.5;
-		margin: 0 0 1rem 0;
+		margin: 1rem;
 		text-transform: uppercase;
 		letter-spacing: 0.2rem;
 	}
@@ -207,7 +228,7 @@ input, select, textarea {
 
 	h1 {
 		font-size: 2.25rem;
-		line-height: 1.3;
+		line-height: 1;
 		letter-spacing: 0.5rem;
 	}
 
@@ -236,8 +257,8 @@ input, select, textarea {
 	@media screen and (max-width: 736px) {
 
 		h1 {
-			font-size: 1.75rem;
-			line-height: 1.4;
+			font-size: 1.2rem;
+			line-height: 1.5;
 		}
 
 		h2 {
@@ -716,6 +737,7 @@ input, select, textarea {
 
 			.image.main img {
 				width: 100%;
+				max-width: 40rem;
 			}
 
 		@media screen and (max-width: 736px) {
@@ -1313,17 +1335,17 @@ input, select, textarea {
 			-ms-transition: opacity 0.325s ease-in-out;
 			transition: opacity 0.325s ease-in-out;
 			position: relative;
-			margin-top: 3.5rem;
+			margin-top: 1.5rem;
 		}
 
 			#header > *:before {
 				content: '';
 				display: block;
 				position: absolute;
-				top: calc(-3.5rem - 1px);
+				top: calc(-1.5rem - 1px);
 				left: calc(50% - 1px);
 				width: 1px;
-				height: calc(3.5rem + 1px);
+				height: calc(1.5rem + 1px);
 				background: #ffffff;
 			}
 
@@ -1336,8 +1358,8 @@ input, select, textarea {
 			}
 
 		#header .logo {
-			width: 15rem;
-			height: 15rem;
+			width: 11rem;
+			height: 11rem;
 			line-height: 5.5rem;
 			border: solid 1px #ffffff;
 			border-radius: 100%;
@@ -1377,20 +1399,22 @@ input, select, textarea {
 				-webkit-transition-delay: 0.25s;
 				-ms-transition-delay: 0.25s;
 				transition-delay: 0.25s;
-				padding: 3rem 2rem;
+				padding: 1.5rem;
 				max-height: 40rem;
 				overflow: hidden;
 			}
 
-				#header .content .inner > :last-child {
+				/* #header .content .inner > :last-child {
 					margin-bottom: 0;
-				}
+				} */
 
 			#header .content p {
 				text-transform: uppercase;
 				letter-spacing: 0.2rem;
 				font-size: 0.8rem;
 				line-height: 2;
+				margin-top: 1.5rem;
+				margin-bottom: 1rem;
 			}
 
 		#header nav ul {
@@ -1509,7 +1533,7 @@ input, select, textarea {
 				}
 
 			#header .content .inner {
-				padding: 2.5rem 1rem;
+				padding: 0.5rem 0.5rem;
 			}
 
 			#header .content p {
@@ -1525,7 +1549,7 @@ input, select, textarea {
 			}
 
 				#header .content .inner {
-					padding: 2.5rem 0;
+					padding: 1.5rem 0;
 				}
 
 				#header nav ul {
@@ -1602,7 +1626,7 @@ input, select, textarea {
 			transition: opacity 0.325s ease-in-out, transform 0.325s ease-in-out;
 			padding: 4.5rem 2.5rem 1.5rem 2.5rem ;
 			position: relative;
-			width: 40rem;
+			width: 70%;
 			max-width: 100%;
 			background-color: rgba(27, 31, 34, 0.85);
 			border-radius: 4px;
@@ -1912,6 +1936,8 @@ button.accordion {
 		vertical-align: middle;
 		border-radius: 0em;
 		width: 100%;
+		margin-right: auto;
+		margin-left: auto;
 	}
 
 /* Slideshow container */
