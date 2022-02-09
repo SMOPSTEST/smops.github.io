@@ -221,6 +221,11 @@ input, select, textarea {
 			margin: 0 0 2rem 0;
 		}
 
+			h2.major {
+				text-align: center;
+				margin: auto;
+				margin-bottom: 2rem;
+			}
 			h3.major {
 				margin-top: 2rem;
 			}
@@ -316,7 +321,8 @@ input, select, textarea {
 	}
 
 	hr.separator {
-		border-bottom: solid 1px grey;
+		/* border-bottom: solid 1px grey; */
+		border: 0;
 		padding: 0px;
 		margin-top: 0.7em;    
 		margin-bottom: 0.7em;
@@ -1043,7 +1049,6 @@ input, select, textarea {
 .bios-table {
     border-collapse: collapse;
     font-size: inherit;
-    font-family: sans-serif;
 	width: 100%;
 	margin-top: 0;
 	margin-bottom: 0.5rem;
@@ -1061,7 +1066,7 @@ input, select, textarea {
 
 .bios-table th {
 	text-align: right;
-	width:15%;
+	width:10%;
 	padding: 0.3rem;
 
 }
@@ -1071,6 +1076,24 @@ input, select, textarea {
 	padding: 0.3rem;
 
 }
+
+.exp-table {
+	border-collapse: collapse;
+	margin: auto;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+	width: 90%;
+	font-size: inherit;
+	white-space:pre-wrap;
+	word-break:break-word;
+	table-layout: fixed;
+}
+
+.exp-table tr th:nth-child(3){
+	width: 40%;
+  }
+
+
 
 /* Button */
 
@@ -1846,9 +1869,9 @@ input, select, textarea {
 button.accordion {
 	width: 100%;
 	white-space: normal;
-	background-color: transparent;
+	background-color: #ffffff13;
 	box-shadow: none;
-	border: none;
+	border-radius: 10px;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
