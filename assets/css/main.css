@@ -165,7 +165,7 @@ input, select, textarea {
 		color: #ffffff;
 		font-family: "Source Sans Pro", sans-serif;
 		font-weight: 300;
-		font-size: 1.15rem;
+		font-size: 1rem;
 		line-height: 1.65;
 	}
 
@@ -217,23 +217,22 @@ input, select, textarea {
 			width: -webkit-max-content;
 			width: -ms-max-content;
 			width: max-content;
-			padding-bottom: 0.5rem;
+			padding-bottom: 0.2rem;
 			margin: 0 0 2rem 0;
 		}
 
 			h3.major {
-				padding-top: 1rem;
-				text-transform: none;
+				margin-top: 2rem;
 			}
 
 	h1 {
-		font-size: 2.25rem;
+		font-size: 2rem;
 		line-height: 1;
 		letter-spacing: 0.5rem;
 	}
 
 	h2 {
-		font-size: 1.5rem;
+		font-size: 1.3rem;
 		line-height: 1.4;
 		letter-spacing: 0.5rem;
 	}
@@ -262,7 +261,7 @@ input, select, textarea {
 		}
 
 		h2 {
-			font-size: 1.25em;
+			font-size: 1rem;
 			line-height: 1.5;
 		}
 
@@ -989,9 +988,9 @@ input, select, textarea {
 			border-right: 0;
 		}
 
-			table tbody tr:nth-child(2n + 1) {
+			/* table tbody tr:nth-child(2n + 1) {
 				background-color: rgba(255, 255, 255, 0.075);
-			}
+			} */
 
 		table td {
 			padding: 0.75em 0.75em;
@@ -1043,11 +1042,12 @@ input, select, textarea {
 
 .bios-table {
     border-collapse: collapse;
-    font-size: 0.9em;
+    font-size: inherit;
     font-family: sans-serif;
 	width: 100%;
-	margin-top: 1em;
-	margin-bottom: 0;
+	margin-top: 0;
+	margin-bottom: 0.5rem;
+	background: transparent;
 }
 
 .bios-table tbody tr {
@@ -1061,11 +1061,15 @@ input, select, textarea {
 
 .bios-table th {
 	text-align: right;
-	width:10%;
+	width:15%;
+	padding: 0.3rem;
+
 }
 
 .bios-table td {
 	text-align: left;
+	padding: 0.3rem;
+
 }
 
 /* Button */
@@ -1090,7 +1094,7 @@ input, select, textarea {
 		color: #ffffff !important;
 		cursor: pointer;
 		display: inline-block;
-		font-size: 0.8rem;
+		font-size: 0.5rem;
 		font-weight: 300;
 		height: 2.75rem;
 		letter-spacing: 0.2rem;
@@ -1632,7 +1636,7 @@ input, select, textarea {
 			transition: opacity 0.325s ease-in-out, transform 0.325s ease-in-out;
 			padding: 4.5rem 2.5rem 1.5rem 2.5rem ;
 			position: relative;
-			width: 65%;
+			width: 50%;
 			max-width: 100%;
 			background-color: rgba(27, 31, 34, 0.85);
 			border-radius: 4px;
@@ -1776,7 +1780,7 @@ input, select, textarea {
 		position: relative;
 		border-top: transparent;
 		text-align: center;
-		padding: 1em ;
+		padding: 2.5em ;
 	}
 	
 	.sponsor section.vert {
@@ -1788,7 +1792,7 @@ input, select, textarea {
 	}
 
 	.sponsor section.hor {
-		width: 50%;
+		width: 45%;
 	}
 
 	.sponsor section a.logo{
@@ -1798,11 +1802,11 @@ input, select, textarea {
 	}
 
 		.sponsor section.vert img{
-			width: 100%;
+			width: 90%;
 		}
 
 		.sponsor section.hor img {
-			width:100%;
+			width:90%;
 	}
 
 	@media screen and (max-width: 480px) {
@@ -1842,32 +1846,33 @@ input, select, textarea {
 button.accordion {
 	width: 100%;
 	white-space: normal;
-	/* background-color: transparent; */
+	background-color: transparent;
 	box-shadow: none;
-	/* border: 2px solid #4CAF50; Green */
+	border: none;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	height: 5rem;
+	height: 4rem;
 	padding: 0;
 }
 
+
 .imagewrapper {
 	width: 15%;
-	min-width: 70px;
 }
 
 .imagewrapper img {
-	width: 60%;
+	width: 100%;
+	max-width: 50px;
+	height: auto;
 	vertical-align: middle;
-	/* object-fit: contain; */
 	border-radius: 50%;
 }
 
 .imagewrapper.exp img {
 	border-radius: 0;
 	width: 60%;
-	height: 100%;
+	height: auto;
 }
 
 .accordion .infocontainer { /* Container*/
@@ -1881,17 +1886,13 @@ button.accordion {
 		font-weight: bold;
 		text-transform: uppercase;
 		margin-bottom: 0;
-		padding-bottom: 0;
+		padding-bottom: 0.2rem;
 		letter-spacing: 1px;
-		font-size: 1rem;
+		font-size: 0.7rem;
 	}
 
 	.infocontainer .detail {
-		font-size: 0.7em;
-	}
-
-	.infocontainer .detail .name {
-		font-size: 0.7em;
+		font-size: 0.6rem;
 	}
 
 	.infocontainer .detail.news {
@@ -1902,38 +1903,17 @@ button.accordion {
 .panel {
 	display: block;
 	padding: 0 0;
-	background-color: rgba(255, 255, 255, 0);
+	background-color: transparent;
 	max-height: 0;
 	overflow: hidden;
 	text-align: justify;
 	text-justify: inter-word;
-	transition: max-height 0.2s ease-out;
+	transition: max-height 0.4s ease-out;
   }
 
 .panel p {
 	margin-bottom: 0.5em;
 }
-
-
-/* BACK TO TOP BUTTON */
-/* #myBtn {
-	display: none;
-	position: fixed;
-	bottom: 20px;
-	right: 30px;
-	z-index: 99;
-	font-size: 14px;
-	border: none;
-	outline: none;
-	background-color: #e6332a;
-	color: white;
-	cursor: pointer;
-	border-radius: 4px;
-  }
-  
-  #myBtn:hover {
-	background-color: #555;
-  } */
 
 
   /* SLIDESHOW */
@@ -1950,7 +1930,7 @@ button.accordion {
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 40rem;
+  max-width: 75%;
   position: relative;
   margin-right: auto;
   margin-left: auto;
@@ -1958,6 +1938,11 @@ button.accordion {
   margin-bottom: 1rem;
 }
 
+	@media screen and (max-width: 480px) {
+		.slideshow-container {
+		max-width: 100%;
+		}
+	}
 
 /* Next & previous buttons */
 .prev, .next {
