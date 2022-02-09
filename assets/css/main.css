@@ -165,7 +165,7 @@ input, select, textarea {
 		color: #ffffff;
 		font-family: "Source Sans Pro", sans-serif;
 		font-weight: 300;
-		font-size: 1rem;
+		font-size: 0.8rem;
 		line-height: 1.65;
 	}
 
@@ -1910,12 +1910,13 @@ button.accordion {
 		text-transform: uppercase;
 		margin-bottom: 0;
 		padding-bottom: 0.2rem;
-		letter-spacing: 1px;
-		font-size: 0.7rem;
+		letter-spacing: 1.5px;
+		font-size: 0.8rem;
 	}
 
 	.infocontainer .detail {
-		font-size: 0.6rem;
+		font-size: 0.5rem;
+		letter-spacing: 1px;
 	}
 
 	.infocontainer .detail.news {
