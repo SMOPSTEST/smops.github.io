@@ -979,8 +979,24 @@ input, select, textarea {
 /* Table */
 
 	.table-wrapper {
-		-webkit-overflow-scrolling: touch;
 		overflow-x: auto;
+		scrollbar-width: thin;
+		scrollbar-color: rgba(255, 255, 255, 0.075) rgb(110, 110, 110);
+	}
+	
+	/* Works on Chrome, Edge, and Safari */
+	.table-wrapper::-webkit-scrollbar {
+		width: 12px;
+	}
+	
+	.table-wrapper::-webkit-scrollbar-track {
+		background: rgba(255, 255, 255, 0.075);
+	}
+	
+	.table-wrapper::-webkit-scrollbar-thumb {
+		background-color: rgb(110, 110, 110);
+		border-radius: 10px;
+		border: 3px solid rgba(255, 255, 255, 0.075);
 	}
 
 	table {
@@ -1049,9 +1065,8 @@ input, select, textarea {
 .bios-table {
     border-collapse: collapse;
     font-size: inherit;
-	width: 100%;
-	margin-top: 0;
-	margin-bottom: 0.5rem;
+	width: 90%;
+	margin: auto;
 	background: transparent;
 }
 
@@ -1077,9 +1092,15 @@ input, select, textarea {
 
 }
 
+
+
 .exp-table {
 	border-collapse: collapse;
-	margin: 2rem;
+	margin: auto;
+	margin-top: 1rem;
+	min-width: 600px;
+	overflow-x: auto;
+
 	width: 90%;
 	font-size: inherit;
 	white-space:pre-wrap;
@@ -1880,6 +1901,7 @@ button.accordion {
 
 .imagewrapper {
 	width: 15%;
+	margin: 0.5rem;
 }
 
 .imagewrapper img {
