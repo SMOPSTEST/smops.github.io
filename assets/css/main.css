@@ -1079,9 +1079,7 @@ input, select, textarea {
 
 .exp-table {
 	border-collapse: collapse;
-	margin: auto;
-	margin-top: 2rem;
-	margin-bottom: 2rem;
+	margin: 2rem;
 	width: 90%;
 	font-size: inherit;
 	white-space:pre-wrap;
@@ -1749,7 +1747,7 @@ input, select, textarea {
 		transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
 		width: 100%;
 		max-width: 100%;
-		margin-top: 2rem;
+		margin-top: 1rem;
 		text-align: center;
 	}
 
@@ -1936,7 +1934,9 @@ button.accordion {
   }
 
 .panel p {
-	margin-bottom: 0.5em;
+	width: 90%;
+	margin: auto;
+	margin-top: 1rem;
 }
 
 
