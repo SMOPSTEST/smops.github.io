@@ -1961,6 +1961,12 @@ button.accordion {
 	margin-top: 1rem;
 }
 
+.panel ul {
+	width: 90%;
+	margin: auto;
+	margin-top: 1rem;
+}
+
 
   /* SLIDESHOW */
 
