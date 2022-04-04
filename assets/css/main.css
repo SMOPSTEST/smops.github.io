@@ -1495,7 +1495,7 @@ input, select, textarea {
 					min-width: 7.5rem;
 					height: 2.75rem;
 					line-height: 2.75rem;
-					padding: 0 1.25rem 0 1.45rem;
+					padding: 0 0rem 0 0rem;
 					text-transform: uppercase;
 					letter-spacing: 0.2rem;
 					font-size: 0.8rem;
@@ -1594,7 +1594,7 @@ input, select, textarea {
 
 		}
 
-		@media screen and (max-width: 480px) {
+		@media screen and (max-width: 980px) {
 
 			#header {
 				padding: 1.5rem 0;
@@ -1733,7 +1733,7 @@ input, select, textarea {
 					background-color: rgba(255, 255, 255, 0.175);
 				}
 
-		@media screen and (max-width: 736px) {
+		@media screen and (max-width: 980px) {
 
 			#main article {
 				padding: 3.5rem 2rem 0.5rem 2rem ;
@@ -1973,7 +1973,8 @@ button.accordion {
 * {box-sizing: border-box}
 
 /* Hide the images by default */
-.mySlides1, .mySlides2, .mySlides3, .mySlides4, .mySlides5 {display: none}
+/* .mySlides1, .mySlides2, .mySlides3, .mySlides4, .mySlides5 {display: none} */
+.mySlides {display: none}
 	img {
 		vertical-align: middle;
 		border-radius: 0em;
