@@ -1972,14 +1972,6 @@ button.accordion {
 
 * {box-sizing: border-box}
 
-/* Hide the images by default */
-/* .mySlides1, .mySlides2, .mySlides3, .mySlides4, .mySlides5 {display: none} */
-.mySlides {display: none}
-	img {
-		vertical-align: middle;
-		border-radius: 0em;
-		width: 100%;
-	}
 
 /* Slideshow container */
 .slideshow-container {
@@ -1995,6 +1987,12 @@ button.accordion {
 		.slideshow-container {
 		max-width: 100%;
 		}
+	}
+
+	.slideshow-container img {
+		vertical-align: middle;
+		border-radius: 0em;
+		width: 100%;
 	}
 
 /* Next & previous buttons */
